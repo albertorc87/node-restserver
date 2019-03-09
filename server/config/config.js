@@ -20,7 +20,7 @@ process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
 
 
 let urlDB;
-
+//"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
 if (process.env.NODE_ENV !== 'dev') {
     urlDB = process.env.MONGO_URI;
 } else {
@@ -28,3 +28,8 @@ if (process.env.NODE_ENV !== 'dev') {
 }
 
 process.env.URLDB = urlDB;
+
+// ============================
+// Google client id
+// ============================
+process.env.CLIENT_ID = process.env.CLIENT_ID || '306407982391-95s4a0ns4oipi9dqkkavl8335vc1b6al.apps.googleusercontent.com';
